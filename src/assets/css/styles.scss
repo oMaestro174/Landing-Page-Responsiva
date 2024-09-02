@@ -1,0 +1,71 @@
+// src/assets/css/styles.scss
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$dark-bg: #2c3e50;
+$light-bg: #ecf0f1;
+$font-color: #333;
+
+body {
+    font-family: Arial, sans-serif;
+    color: $font-color;
+    background-color: $light-bg;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: $primary-color;
+    padding: 20px;
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo img {
+            width: 150px;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+
+            li a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .theme-toggle {
+            label {
+                color: white;
+            }
+        }
+    }
+}
+
+.hero {
+    background-color: $secondary-color;
+    color: white;
+    padding: 50px 0;
+
+    .container {
+        text-align: center;
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .btn-primary {
+            background-color: white;
+            color: $primary-color;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    }
+}
+
+// Restante do CSS para as seções "features", "pricing", "contact", e "footer"
